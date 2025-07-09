@@ -2,7 +2,7 @@
 :root {
   --bg-color: #ffffff;
   --text-color: #000000;
-  --highlight-color: #00bcd4; /* cyan */
+  --highlight-color: #00bcd4;
 }
 
 .dark {
@@ -10,7 +10,6 @@
   --text-color: #f0f0f0;
   --highlight-color: cyan;
 }
-
 
 body {
   font-family: 'Poppins', sans-serif;
@@ -25,6 +24,7 @@ header {
   background-color: var(--bg-color);
   color: var(--text-color);
 }
+
 
 .btn-cv {
   background: var(--button-bg);
@@ -112,7 +112,7 @@ nav ul li a {
 .hero-left p {
   font-size: 1rem;
   max-width: 500px;
-  color: #ccc;
+  color: var(--text-color);
   line-height: 1.6;
 }
 
@@ -280,7 +280,7 @@ nav ul li a {
 .about-right p {
   font-size: 1rem;
   line-height: 1.8;
-  color: #ccc;
+  color: var(--text-color);
   max-width: 700px;
 }
 
@@ -387,7 +387,8 @@ nav ul li a {
   margin-top: 10px;
   font-size: 1rem;
   font-weight: 600;
-  color: white;
+  color: var(--text-color);
+
 }
 
 /* === Projects Section === */
@@ -425,7 +426,8 @@ nav ul li a {
 .project-content p {
   font-size: 0.95rem;
   margin-bottom: 15px;
-  color: #ddd;
+  color: cyan;
+
 }
 .btn-view {
   display: inline-block;
@@ -462,7 +464,7 @@ nav ul li a {
 .contact-info {
   flex: 1;
   min-width: 280px;
-  color: #eee;
+  color: var(--text-color);
 }
 .contact-info .highlight {
   color: var(--highlight-color);
@@ -510,7 +512,7 @@ nav ul li a {
   background: #222;
   border: none;
   border-radius: 8px;
-  color: white;
+  color: var(--text-color);
   font-size: 1rem;
 }
 .contact-form input::placeholder,
