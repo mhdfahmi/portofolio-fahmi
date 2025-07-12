@@ -91,7 +91,11 @@ nav ul {
 nav ul li a {
   color: cyan;
   font-weight: 500;
+  font-family: 'Great Vibes', cursive;
+  font-size: 1.5rem;
+  text-shadow: 0 0 8px cyan;
 }
+
 #toggleDark {
   background: cyan;
   color: #000;
