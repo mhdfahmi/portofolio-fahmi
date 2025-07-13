@@ -674,11 +674,4 @@ footer {
   }
 }
 
-@keyframes glowPulse {
-  0%, 100% {
-    box-shadow: 0 0 15px cyan, 0 0 30px cyan;
-  }
-  50% {
-    box-shadow: 0 0 30px #00e5ff, 0 0 60px #00e5ff;
-  }
-}
+
