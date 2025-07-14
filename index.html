@@ -78,10 +78,10 @@
   </div>
 </section>
 
-
-  <section id="skills" class="skills">
-     <h2 style="text-align: center;">My Skills</h2>
-
+<section id="skills" class="skills"> ... </section>
+  <h2 style="text-align: center; margin: 80px 0 30px;">
+  My <span class="highlight">Skill</span>
+</h2>
     <!-- Technical Skills -->
     <h3 class="sub-skill-title">Technical Skills</h3>
     <div class="technical-skills">
@@ -128,7 +128,7 @@
         </div>
         <span class="percent-label">60%</span>
       </div>
-
+ </div>
     <!-- Personal Skills -->
     <h3 class="sub-skill-title">Personal Skills</h3>
     <div class="personal-skills-circle">
@@ -169,40 +169,71 @@
       </div>
     </div>
   </section>
+  
+  <!--Project-->
+  <section class="book-carousel" id="projects">...</section>
+<h2 style="text-align: center; margin: 80px 0 30px;">
+  Latest <span class="highlight">Projects</span>
+</h2>
 
-  <section id="projects">
-  <h2 style="text-align: center; margin-top: 100px;">Latest Projects</h2>
-  <div class="projects-grid">
-
-    <div class="project-card">
-      <img src="images/win100.png" alt="Web Win 100">
-      <div class="project-content">
+<section class="book-carousel">
+  <div class="book-page active" id="win100">
+    <div class="book-left">
+      <img src="images/win100.png" alt="Win 100" />
+      <div class="book-tabs">
+        <button class="tab-button active" data-target="win100">Win100</button>
+        <button class="tab-button" data-target="heyfreak">Hey Freak</button>
+        <button class="tab-button" data-target="gresik">Gresik</button>
+      </div>
+    </div>
+    <div class="book-right">
+      <div class="book-content">
         <h3>Web Win 100</h3>
-        <p>Full Stack Web Developer.</p>
+        <p>Full Stack Web Developer project dengan tampilan modern dan dinamis.</p>
         <a href="https://win100-theta.vercel.app" target="_blank" class="btn-view">View Project</a>
       </div>
     </div>
+  </div>
 
-    <div class="project-card">
-      <img src="images/analisis.png" alt="Ulasan produk Hey Freak">
-      <div class="project-content">
-        <h3>Ulasan produk Hey Freak</h3>
-        <p>Developed an interactive user interface using Streamlit.</p>
+  <!-- Hey Freak -->
+  <div class="book-page" id="heyfreak">
+    <div class="book-left">
+      <img src="images/analisis.png" alt="Hey Freak" />
+      <div class="book-tabs">
+        <button class="tab-button" data-target="win100">Win100</button>
+        <button class="tab-button active" data-target="heyfreak">Hey Freak</button>
+        <button class="tab-button" data-target="gresik">Gresik</button>
+      </div>
+    </div>
+    <div class="book-right">
+      <div class="book-content">
+        <h3>Hey Freak Review</h3>
+        <p>Analisis UI menggunakan Streamlit untuk produk Hey Freak.</p>
         <a href="https://app-ulasa-f9esbvo2wh33hrscy7brrk.streamlit.app/" target="_blank" class="btn-view">View Project</a>
       </div>
     </div>
+  </div>
 
-    <div class="project-card">
-      <img src="images/gresik.png" alt="Front end web developer">
-      <div class="project-content">
-        <h3>Front end web developer</h3>
-        <p>Designed and developed a simple, responsive.</p>
+  <!-- Gresik -->
+  <div class="book-page" id="gresik">
+    <div class="book-left">
+      <img src="images/gresik.png" alt="Gresik" />
+      <div class="book-tabs">
+        <button class="tab-button" data-target="win100">Win100</button>
+        <button class="tab-button" data-target="heyfreak">Hey Freak</button>
+        <button class="tab-button active" data-target="gresik">Gresik</button>
+      </div>
+    </div>
+    <div class="book-right">
+      <div class="book-content">
+        <h3>Landing Page Gresik</h3>
+        <p>Website informatif dan responsive tentang kota Gresik.</p>
         <a href="https://tentang-gresik-vnki.vercel.app/" target="_blank" class="btn-view">View Project</a>
       </div>
     </div>
-
   </div>
 </section>
+
 
 <section id="contact">
   <h2>Contact <span class="highlight">Me</span></h2>

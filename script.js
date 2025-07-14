@@ -1,8 +1,21 @@
+// 🔄 Load mode dari localStorage
+if (localStorage.getItem('theme') === 'dark') {
+  document.documentElement.classList.add('dark');
+}
+
 // 🌙 Toggle Dark Mode
 const toggle = document.getElementById('toggleDark');
 toggle.addEventListener('click', () => {
   document.documentElement.classList.toggle('dark');
+
+  // Simpan ke localStorage
+  if (document.documentElement.classList.contains('dark')) {
+    localStorage.setItem('theme', 'dark');
+  } else {
+    localStorage.removeItem('theme');
+  }
 });
+
 
 // ✍️ Typing Effect Hero Section
 const typedText = document.querySelector('.typed-text');
@@ -56,3 +69,19 @@ document.addEventListener("DOMContentLoaded", function () {
     circlePath.style.strokeDashoffset = offset;
   });
 });
+// 📘 Book-style Project Carousel
+document.querySelectorAll('.tab-button').forEach(button => {
+  button.addEventListener('click', () => {
+    const targetId = button.getAttribute('data-target');
+
+    // Sembunyikan semua halaman
+    document.querySelectorAll('.book-page').forEach(page => {
+      page.classList.remove('active');
+    });
+
+    // Tampilkan halaman target
+    document.getElementById(targetId).classList.add('active');
+  });
+});
+
+
