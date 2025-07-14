@@ -695,7 +695,7 @@ h2 .highlight {
 
 .book-carousel {
   max-width: 1000px;
-  margin: 0 auto 120px;
+  margin: 0 auto 60px; /* atau 40px */
   background-color: var(--bg-color);
   box-shadow: 0 0 10px var(--highlight-color);
   border-radius: 20px;
