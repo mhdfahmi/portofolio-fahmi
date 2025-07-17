@@ -83,5 +83,20 @@ document.querySelectorAll('.tab-button').forEach(button => {
     document.getElementById(targetId).classList.add('active');
   });
 });
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.getElementById("contactForm");
+  const emailInput = form.querySelector('input[name="email"]');
+
+  form.addEventListener("submit", function (event) {
+    const email = emailInput.value.trim();
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+
+    if (!emailRegex.test(email)) {
+      alert("Masukkan email yang valid (misal: nama@email.com).");
+      event.preventDefault(); // cegah pengiriman form
+    }
+  });
+});
+
 
 
